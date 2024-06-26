@@ -1,4 +1,6 @@
 import shutil
+import os
 # Input your directory......
-dir=r"D:\downloads\Python\Projects\FunWares\CountdownWare\Example"
+with open(f"{os.getcwd()}/dir.txt") as f:
+    dir=f.read()
 shutil.rmtree(dir)
